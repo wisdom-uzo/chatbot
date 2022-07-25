@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useState } from 'react';
 import Chatbot from 'react-chatbot-kit';
-import 'react-chatbot-kit/build/main.css';
+//import 'react-chatbot-kit/build/main.css';
 import { config, ActionProvider, MessageParser } from '../chatbot'
 
 
@@ -31,6 +31,7 @@ export default function Home() {
       <main className='grid grid-cols-1 justify-center grid-flow-row mx-5'>
         
           <Chatbot
+            styles={{width:'10%', backgroundColor:"red"}}
             config={config}
             actionProvider={ActionProvider}
             messageParser={MessageParser}
