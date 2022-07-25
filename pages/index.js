@@ -28,14 +28,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='flex justify-center'>
-        <div className="shadow-lg border border-green-500 ">
+      <main className='grid grid-cols-1 justify-center grid-flow-row mx-5'>
+        
           <Chatbot
             config={config}
             actionProvider={ActionProvider}
             messageParser={MessageParser}
           />
-        </div>
+       
        
     
       
